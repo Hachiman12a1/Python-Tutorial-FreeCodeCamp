@@ -2,14 +2,11 @@ import random
 
 
 def get_choices():
-    player_choice = input("Enter a choice (rock, paper. scissors : ")
+    player_choice = input("Enter a choice (rock, paper. scissors) : ")
     options = ["rock", "paper", "scissors"]
     computer_choice = random.choice(options)
     choices = {"player": player_choice, "computer": computer_choice}
     return choices
-
-
-choice = get_choices()
 
 
 def check_win(player, computer):
@@ -33,4 +30,6 @@ def check_win(player, computer):
             return "Rock smashes scissors! You lose!"
 
 
-check_win("Player", "Ball")
+choices = get_choices()
+result = check_win(choices["player"], choices["computer"])
+print(result)
