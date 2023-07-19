@@ -2,9 +2,14 @@ def get_choices():
     player_choice = "rock"
     computer_choice = "paper"
 
-    return player_choice
+    choices = {"player": player_choice, "computer": computer_choice}
+    return choices
 
 
-response = get_choices()
+choices = get_choices()
 
-print(response)
+print(choices)
+
+dict = {"name" : "beau", "color" : choices}
+
+print(dict)
