@@ -1,5 +1,4 @@
-name = "Beau"
-age = 39
+number = "23"
+age = int(number)
 
-
-# Comments with "#"
+print(isinstance(age, int))
