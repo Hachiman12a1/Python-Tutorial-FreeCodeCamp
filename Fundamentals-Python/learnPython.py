@@ -1,4 +1,11 @@
-number = "23"
-age = int(number)
+1 + 1  # 2
+2-1  # 1
+2*2  # 4
+2/2  # 1
+4 % 3  # 1
+4**2  # 16
+5//2  # 2
 
-print(isinstance(age, int))
+age = 8
+age *= 8
+print(age)
