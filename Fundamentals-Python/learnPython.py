@@ -1,11 +1,7 @@
-1 + 1  # 2
-2-1  # 1
-2*2  # 4
-2/2  # 1
-4 % 3  # 1
-4**2  # 16
-5//2  # 2
+a = 1
+b = 2
 
-age = 8
-age *= 8
-print(age)
+a == b  # false
+a != b  # true
+a > b  # false
+a < b  # true
