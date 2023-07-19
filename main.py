@@ -11,3 +11,7 @@ def get_choices():
 
 choice = get_choices()
 print(choice)
+
+
+def check_win(player, computer):
+    return [player, computer]
