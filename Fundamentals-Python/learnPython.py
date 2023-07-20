@@ -1,13 +1,5 @@
-done = False or ""
-print(done)
-print(type(done) == bool)
-print("yes") if done else print("no")
+num1 = 2 + 3j
+num2 = complex(2, 3)
 
-
-book_1_read = "hi"
-book_2_read = False
-
-read_any_book = any([book_1_read, book_2_read])
-read_all_book = all([book_1_read, book_2_read])
-print(read_any_book)
-print(read_all_book)
+print(num2)
+print(num2.real, num2.imag)
