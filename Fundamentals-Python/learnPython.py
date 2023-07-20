@@ -1,14 +1,12 @@
-items = ['Roger', "dat", "Syd", "Bz", "Quincy", "beau"]
+# Tuples
+names = ("Roger", "Syd", "Beau", "Dat")
 
-# Copy List
-itemsCopy = items[:]
+names[-1]
+names.index("Roger")
+len(names)
 
-# Sort
-# Method 1
-# items.sort(key=str.lower)
+print("Dat" in names)
+print(sorted(names))
 
-# Method 2 - Not modifying original lists
-itemsSort = sorted(items, key=str.lower)
-print(items)
-print(itemsSort)
-print(itemsCopy)
+newTuple = names + ("Tina", "Quincy")
+print(newTuple)
