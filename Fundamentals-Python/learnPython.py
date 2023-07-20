@@ -1,32 +1,14 @@
-dogs = ['Roger', 1, "Syd", True, "Quincy", 7]
+items = ['Roger', "dat", "Syd", "Bz", "Quincy", "beau"]
 
-# Access List item index
-dogs[2] = "Beau"
-print("Beau" in dogs)
+# Copy List
+itemsCopy = items[:]
 
-# Slice Item
-print(dogs[2:5])
-print(dogs[:3])
+# Sort
+# Method 1
+# items.sort(key=str.lower)
 
-# Length of list
-print(len(dogs))
-
-# Add item
-dogs.append("dat")
-dogs.extend(["world", "Cloud"])
-dogs += ["world1", "Cloud1"]
-
-# Remove Item
-dogs.remove("Quincy")
-# Remove Last Item
-dogs.pop()
-print(dogs)
-
-# Insert Item According To Index
-print("----List Items--------")
-items = ['Roger', 1, "Syd", True, "Quincy", 7]
-
-items.insert(2, "dat")
-items[1:2] = ["abc", "def"]
-
+# Method 2 - Not modifying original lists
+itemsSort = sorted(items, key=str.lower)
 print(items)
+print(itemsSort)
+print(itemsCopy)
