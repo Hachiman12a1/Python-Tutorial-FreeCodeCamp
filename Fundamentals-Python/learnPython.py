@@ -1,42 +1,10 @@
-# Dictionaries
-dog = {"name": "Roger", "age": 8, "color": "black"}
+# Sets
+set1 = {"Roger", "Syd"}
+set2 = {"Roger", "Beau"}
 
-dog['name'] = "Syd"
+mixSetAnd = set1 & set2
+mixSetOr = set1 | set2
+mixSetSubtract = set1 - set2
+compareSet = set1 > set2
 
-print(dog)
-print(dog.get('color', "green"))
-
-# Remove Item With key
-# dog.pop("age")
-# Remove last Item
-# dog.popitem()
-
-# Check Is Item In Dictionary
-print("color" in dog)
-
-# Keys of Dictionary
-print(dog.keys())
-print(list(dog.keys()))
-
-# Values of Dictionary
-print(dog.values())
-print(list(dog.values()))
-
-# Individual Items of Dictionary
-print(dog.items())
-print(list(dog.items()))
-
-# length of dictionary
-print(len(dog))
-
-# Add item to dictionary
-dog["favorite_food"] = "Meat"
-
-# Remove item from dictionary
-del dog["color"]
-print(dog)
-
-# Copy dictionary
-dogCopy = dog.copy()
-
-print(dogCopy)
+print(mixSetAnd, mixSetOr, mixSetSubtract, compareSet, list(mixSetOr))
