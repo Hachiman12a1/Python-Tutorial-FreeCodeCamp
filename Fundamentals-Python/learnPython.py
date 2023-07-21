@@ -1,20 +1,11 @@
-# loops
-
-# While
-count = 0
-while count < 10:
-    count += 1
-    print(count)
-    
-print("Ended Loop")
-
-# For
+# Break and continue
 items = ["a", "b", "c", "d", "e"]
 for item in items:
+    if(item == "a"):
+        continue
     print(item)
     
-for item in range(15):
+for item in items:
+    if(item == "c"):
+        break
     print(item)
-    
-for index,item in enumerate(items):
-    print(index,item)
