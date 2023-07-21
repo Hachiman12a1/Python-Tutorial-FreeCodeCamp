@@ -1,5 +1,5 @@
-# Docstrings
-def add(a, b):
+# Annotation
+def add(a: int, b: int) -> int:
     """
     Phương thức này thực hiện phép cộng hai số.
 
