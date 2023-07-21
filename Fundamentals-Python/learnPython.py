@@ -1,6 +1,7 @@
 # Sets
-set1 = {"Roger", "Syd"}
+set1 = {"Roger", "Syd", "Roger"}
 set2 = {"Roger", "Beau"}
+
 
 mixSetAnd = set1 & set2
 mixSetOr = set1 | set2
