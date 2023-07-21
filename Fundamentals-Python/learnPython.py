@@ -1,7 +1,18 @@
-# List Compression
+# Polymorphism 
+class Flying:
+    def fly(self):
+        pass
 
-numbers = [1,2,3,4,5]
+class Airplane(Flying):
+    def fly(self):
+        print("Flying in an airplane.")
 
-numbers_power_2 = [n** 2 for n in numbers]
+class Bird(Flying):
+    def fly(self):
+        print("Flying like a bird.")
 
-print(numbers_power_2)
+def fly_high(flying_object):
+    flying_object.fly()
+
+fly_high(Airplane())
+fly_high(Bird())
