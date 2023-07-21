@@ -1,11 +1,25 @@
-# Sets
-set1 = {"Roger", "Syd", "Roger"}
-set2 = {"Roger", "Beau"}
+# Functions
+def hello(name="My Friend", age=18):
+    print(f"Hello {name}, you are {str(age)} years old!")
 
 
-mixSetAnd = set1 & set2
-mixSetOr = set1 | set2
-mixSetSubtract = set1 - set2
-compareSet = set1 > set2
+hello("dat", 23)
 
-print(mixSetAnd, mixSetOr, mixSetSubtract, compareSet, list(mixSetOr))
+
+def change(value):
+    value["name"] = "dat"
+
+
+val = {"name": "Beau"}
+change(val)
+
+print(val)
+
+
+def hello(name):
+    if not name:
+        return
+    print('Hello ' + name)
+
+
+hello("Dat")
