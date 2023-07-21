@@ -1,13 +1,24 @@
-# Annotation
-def add(a: int, b: int) -> int:
-    """
-    Phương thức này thực hiện phép cộng hai số.
+# Exceptions
+try:
+    result = 2 /0
+except ZeroDivisionError:
+    print("Cannot divide by zero!")
+finally:
+    result = 1
+    
+print(result)
 
-    Args:
-        a (int): số hạng thứ nhất
-        b (int): số hạng thứ hai
+try:
+    raise Exception("An error!")
+except Exception as error:
+    print(error)
 
-    Returns:
-        int: tổng của a và b
-    """
-    return a + b
+
+class DogNotFoundException(Exception):
+    print("inside!")
+    pass
+
+try:
+    raise DogNotFoundException("An error!")
+except DogNotFoundException:
+    print("Dog not found!")
