@@ -1,8 +1,16 @@
-# Recursion
-def factorial(n) :
-    if n == 1: return 1
-    return n  * factorial(n - 1)
+# Decorators
 
-print(factorial(3))
-print(factorial(4))
-print(factorial(5))
+def logTime(func):
+    def wrapper():
+        print("before")
+        val = func()
+        print("after")
+        return val
+    
+    return wrapper  
+
+@logTime
+def hello():
+    print("hello")
+    
+hello()
