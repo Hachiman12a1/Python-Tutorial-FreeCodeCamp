@@ -1,8 +1,6 @@
-from lib.dog import bark
-# Built-in libraries
-from math import sqrt
-    
-bark()
-print(int(sqrt(4)))
+# Lambda Functions
+lambda number: number * 2
 
+multiply = lambda a,b: a * b
 
+print(multiply(2, 5))
