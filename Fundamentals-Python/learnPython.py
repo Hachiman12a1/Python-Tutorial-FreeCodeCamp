@@ -1,20 +1,20 @@
-# Nested Functions
-def count():
-    count = 0
+# loops
 
-    def increment():
-        nonlocal count  # Sử dụng nonlocal keyword để tham chiếu biến count trong scope bên ngoài increment()
-        count += 1
-        return count
+# While
+count = 0
+while count < 10:
+    count += 1
+    print(count)
+    
+print("Ended Loop")
 
-    return increment
-
-
-sum = count()
-
-print(sum())
-print(sum())
-print(sum())
-
-
-        
+# For
+items = ["a", "b", "c", "d", "e"]
+for item in items:
+    print(item)
+    
+for item in range(15):
+    print(item)
+    
+for index,item in enumerate(items):
+    print(index,item)
