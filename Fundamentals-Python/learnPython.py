@@ -1,18 +1,14 @@
-# Polymorphism 
-class Flying:
-    def fly(self):
-        pass
+# Operator Overloading
 
-class Airplane(Flying):
-    def fly(self):
-        print("Flying in an airplane.")
+class Dog:
+    def __init__(self, name, age):
+        self.name = name    
+        self.age = age
+        
+    def __gt__(self, other):
+        return True if self.age > other.age else False
+    
+roger = Dog("Roger", 8)
+syd = Dog("Roger", 7)
 
-class Bird(Flying):
-    def fly(self):
-        print("Flying like a bird.")
-
-def fly_high(flying_object):
-    flying_object.fly()
-
-fly_high(Airplane())
-fly_high(Bird())
+print(roger > syd)
