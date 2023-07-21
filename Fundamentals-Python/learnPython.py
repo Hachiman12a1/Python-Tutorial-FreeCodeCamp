@@ -1,16 +1,13 @@
-# Decorators
+# Docstrings
+def add(a, b):
+    """
+    Phương thức này thực hiện phép cộng hai số.
 
-def logTime(func):
-    def wrapper():
-        print("before")
-        val = func()
-        print("after")
-        return val
-    
-    return wrapper  
+    Args:
+        a (int): số hạng thứ nhất
+        b (int): số hạng thứ hai
 
-@logTime
-def hello():
-    print("hello")
-    
-hello()
+    Returns:
+        int: tổng của a và b
+    """
+    return a + b
